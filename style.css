@@ -1,0 +1,531 @@
+a, label{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    padding: 3%;
+}
+
+a:hover{
+    color: #3AA6B9;
+    cursor: pointer;
+}
+
+body{
+    background: #fdfbf7;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #01204E;
+    font-size: 1.2em;
+    padding: 0%;
+    padding-top: 0.5%;
+    margin:6%;
+}
+
+.nav-link:hover{
+    border-radius: 2.5px;
+    border-color: #3AA6B9;
+    border: solid 2px;
+    border-top: none;
+    border-right: none;
+    border-left: none;   
+}
+
+.puzzle{
+    float:right;
+    align-self: center;
+    justify-self: center;
+}
+
+.puzzle:hover{
+    opacity: 80%;
+}
+
+.navbar{
+    animation: fadeIn forwards;
+    animation-duration: 6s;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2.2%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; 
+    color:#01204E;
+    
+}
+
+.navlinks{
+    padding-left: 20%;
+}
+
+.menu{
+    background-color: #fdfbf7;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+.title{
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: -10% -20%;
+    width: 50%;
+    animation: fadeIn;
+    visibility: visible;
+    float: left;
+}
+
+
+.input-container{
+    padding: 10%;
+}
+
+
+#animate{
+    margin-top: 0%;
+    padding-top: 15%;
+    padding-left: 22%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    animation: fadeIn;
+    animation-duration: 3s;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 320%;
+    color: #01204E;
+}
+
+.title h1{
+    font-weight: 300;
+}
+
+#name{
+    font-family: "Advent Pro", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 21%;
+    padding-top: 0%;
+    margin-top: 0%;
+    animation-delay: 3s;
+    animation: lightSpeedInLeft;
+    animation-duration: 4s;
+    font-size: 4.8em;
+    color: #2A629A;
+}
+
+#description{
+    padding-bottom: 15%;
+    padding-left: 22%;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5em;
+    overflow: hidden;
+    opacity: 0%;
+    display: inline-block;
+    animation: slider forwards;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+}
+
+@keyframes slider{
+    from {
+        opacity: 0%;
+        border-right: 4px;
+      }
+    99% {
+        opacity: 99%;
+        border-right: 4px;
+    }
+    100% {
+        opacity: 100%;
+        border-right: none
+      }
+    }
+
+@keyframes fadeIn{
+    from{
+        scale: 0.8;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 100%;
+    }
+}
+
+
+.tagcloud{
+    opacity: 0;
+    animation: slider forwards;
+    animation-duration: 2s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    margin-left: 55%;
+    padding-top: 2%;
+    animation-delay: 3s;
+}
+
+.tagcloud--item:hover{
+    color: #FFC300;
+    cursor: pointer;
+}
+
+iframe{
+    animation: slider forwards;
+    animation-delay: 3.5;
+}
+
+.about{
+    height: 80%;
+    width: 85%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.about_content{
+    width: 50%;
+}
+h2{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2.7em;
+    color:#01204E;
+}
+
+.about_heading{
+    padding-left: 45%;
+}
+
+.about_me{
+    padding-top: 5%;
+    margin-left: 2%;
+}
+
+.about_title{
+    font-family: 'Advent Pro';
+    font-weight: 800;
+    font-size: 2.1em;
+    color: #2A629A;
+    margin-bottom: 0%;
+}
+
+.about_des{
+    font-family: 'Fredoka';
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 3%;
+}
+
+.description_img{
+    border-radius: 50px;
+    width: 18em;
+    height: 15em;
+}
+
+#right{
+    float: right;
+}
+
+#left{
+    float: left;
+    padding-left: 18%;
+}
+.mailing{
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+.mail-img{
+    width: 90%;
+    grid-row: 1/6;
+    grid-column: 1/3;
+    align-self: center;
+    border-radius: 8px;
+}
+.mail-heading{
+    text-align: center;
+    grid-column: 3/6;
+    margin-bottom: 2%;
+}
+
+.mail{
+    font-family: 'Fredoka';
+    line-height: 1.4;
+    font-size: 1.3em;
+    font-weight: 400;
+    grid-column: 3/6;
+    text-align: center;
+    justify-self: center;
+    width: 85%;
+}
+
+
+button{
+    border-color: #3AA6B9;
+    background-color: #fdfbf7;
+    color: #3AA6B9;
+    border-radius: 18px;
+    font-family: 'Fredoka';
+    font-size: 1.2em;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    justify-self: center;
+    width: 45%;
+    margin-top: 5%;
+    padding:3% 0%;
+}
+button:hover{
+    border-color: #3AA6B9;
+    background-color: #3AA6B9;
+    color: #fdfbf7;
+}
+.footer{
+    background-color: #bed8f1;
+    display: block;
+    text-align: center;
+    padding: 5% 2% 3%;
+    color: #01204E;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.footer p{
+    font-family: 'Fredoka';
+}
+
+.footer a{
+    padding-left: 0%;
+}
+
+.footer div{
+    padding-bottom: 2%;
+}
+
+.heading{
+    background-color: #fff3e0;
+    padding-bottom: 10%;
+}
+
+.workshop{
+    font-weight: 800;
+}
+
+.workshops-head{
+    font-size: 2.2em;
+    color: #2A629A;
+    padding-left: 22%;
+    font-family: 'Fredoka';
+    width: 50%;
+    font-weight: 300;
+
+}
+
+.cost{
+    margin-top: 5%;
+    padding: 4%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    text-align: center;
+    font-family: 'Advent Pro';
+    color: #2A629A;
+    font-size: 3em;
+    border-radius: 5px;
+}
+
+.pathways{
+    text-align: center;
+    width: 55%;
+    margin-left: 22%;
+    font-family: 'Fredoka';
+    color: #01204E;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 3%;
+    margin: 12%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.course{
+    margin-top: 5%;
+    border: solid 2px grey;
+    border-radius: 8px;
+    padding: 5%;
+    height: 85%;
+}
+
+.course img{
+    width: 80%;
+    text-align: center;
+    padding: 3%
+}
+
+.course-name{
+    font-family: 'Advent Pro';
+    font-size: 1.5em;
+    margin-bottom: 0%;
+}
+
+.course-info{
+    font-family: 'Fredoka';
+}
+
+.private{
+    text-align: center;
+    color:#2A629A;
+    font-weight: 800;
+}
+
+.private-classes{
+    text-align: center;
+    padding:8%;
+}
+
+.private-description{
+    width: 68%;
+    margin-left: 15%;
+    font-family: 'Fredoka';
+    font-weight: 400;
+    color: #01204E;
+    line-height: 1.5;
+    font-size: 1.4em;
+}
+
+.private-info{
+    padding: 8% 0%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.coding-class {
+    background-color: #fff3e0;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 5% 0%;
+}
+
+.coding-class h3{
+    font-family: 'Advent Pro';
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #01204E;
+}
+
+.coding-class p{
+    font-family: 'Fredoka';
+    font-size: 1.2em;
+    width: 80%;
+    align-self: center;
+    padding-left: 10%;
+    font-weight: 400;
+}
+
+.start-btn{
+    padding: 2%;
+    margin-left: 40%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 20%;
+    border-radius: 40px;
+    display: block;
+}
+
+#iframe{
+    display: none;
+    margin-left: 22%;
+}
+
+@media screen and (max-width: 1000px) {
+    .title{
+        text-align: center;
+        float: none;
+        width: 80%;
+        justify-self: center;
+    }
+    .tagcloud{
+        float: none;
+        margin-left: 5%;
+    }
+    #right{
+        float: none;
+    }
+    #left{
+        float: none;
+        padding-left: 0%;
+    }
+    .about_content{
+        width: 90%;
+    }
+    .description_img{
+        width: 22em;
+        height: 20em;
+    }
+    .about_me{
+        margin-left: 20%;
+    }
+    .mailing{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .mail-img{
+        width: 150%
+    }
+    .mail-heading{
+        font-size: 2em;
+        padding-left: 15%;
+    }
+    .mail{
+        font-size: 1.1em;
+        width: 70%;
+        padding-left: 15%;
+    }
+    .mailing button{
+        width: 80%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #animate{
+        padding-left: 15%;
+    }
+    .workshops-head{
+        padding-left: 15%;
+        width: 70%;
+    }
+    .courses{
+        grid-template-columns: 2fr 2fr;
+    }
+    .pathways{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .private-info{
+        grid-template-columns: 1fr;
+    }
+    .private-description{
+        width: 90%;
+        margin-left: 6%;
+    }
+    .start-btn{
+        width: 40%;
+    }
+}

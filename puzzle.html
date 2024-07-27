@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="puzzle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&family=Satisfy&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>Puzzle</title>
+</head>
+<body>
+    <div class="modal">
+        <img>
+        <h1>Welcome to the Memory Game</h1>
+        <h3>How to Play:</h3>
+        <p>Click on the boxes to make pairs of emojis. Find and match all pairs to move on to the next challenge. This will test your memory and your fast-move skills.</p>
+        <button class="bt1" onclick="window.location.href='index.html'">Go back</button>
+        <button type="button" class="bt2" onclick="openGame()">Let's Go!</button>
+    </div>
+    <div class="container">
+        <p id="lock">🔒</p>
+        <h2>Memory Game</h2>
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload();">Reset Game</button>
+        <a id="next_page" href="index.html">Click Me</a>
+    </div>
+    <script>
+
+        function openGame(){
+            const modal = document.querySelector(".modal");
+            const container = document.querySelector(".container");
+            modal.style.display = 'none';
+            container.style.display = 'flex';
+            document.querySelector("body").style.display = 'flex'
+            document.querySelector('.back').style.visibility = 'visible'
+
+        }
+    </script>
+    <script>    
+
+        const emojis = ["😭","😭","😁","😁","😎","😎","🤣","🤣","😛","😛","🥴","🥴","😡","😡","🥹","🥹"];
+        var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
+        for (var i =0; i<emojis.length; i++){
+            let box = document.createElement('div')
+            box.className = 'item'
+            box.innerHTML = shuf_emojis[i]
+            
+            box.onclick = function() {
+                this.classList.add('boxOpen')
+                setTimeout(function(){
+                    if (document.querySelectorAll('.boxOpen').length >1){
+                        if (document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML){
+                            document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch')
+                            document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch')
+                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
+                            document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+
+                            if (document.querySelectorAll('.boxMatch').length == emojis.length) {
+                                
+                                alert('You win!')
+                                document.querySelector('#next_page').style.display = 'grid';
+                                document.querySelector('.game').style.display = 'none'
+
+                                //function onDrag({movementX, movementY}){
+                                    
+                                    //const lock = document.querySelector('#lock');
+                                    // let lockCoords = lock.getBoundingClientRect()
+                                    // let getStyle = window.getComputedStyle(key);
+                                    // let left = parseInt(getStyle.left);
+                                    // let top = parseInt(getStyle.top);
+                                    // key.style.left = `${left + movementX}px`;
+                                    // key.style.top = `${top + movementY}px`;
+                                    // let keyCoords = key.getBoundingClientRect()
+                                    
+                                    // console.log(keyCoords['x'], keyCoords['y'])
+                                    // console.log(Math.round(lockCoords['x']), Math.round(lockCoords['y']))
+                                    // if (keyCoords['x'] === Math.round(lockCoords['x']) && (keyCoords['y'] === Math.round(lockCoords['y']))) {
+                                    //     alert('Great Job, you found the lock')
+                                    //     lock.style.opacity = '100%'
+                                    //     key.style.display = 'none'
+                                    //     lock.innerHTML = '🔐';
+                                    //     document.querySelector('#next_page').style.display = 'grid';
+                                    //     document.querySelector('.game').style.display = 'none'
+                                        
+                                    // } else {
+                                    //     console.log('Nope')
+                                    // }
+                                //}
+
+                                key.addEventListener("mousedown", ()=>{
+                                    key.addEventListener("mousemove", onDrag)
+                                });
+
+
+                                //alert("First find the key, next drag the key to it's lock (The lock is hidden!)")
+                                
+
+
+
+                            }
+                        } else {
+                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
+                            document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+
+                        }
+                    }
+                   
+                },500)
+                
+                
+            }
+
+            document.querySelector('.game').appendChild(box);
+        }
+    </script>
+
+
+</body>
+</html>

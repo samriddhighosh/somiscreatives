@@ -1,0 +1,292 @@
+a, label{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    padding: 3%;
+}
+
+a:hover{
+    color: #3AA6B9;
+    cursor: pointer;
+}
+
+body{
+    background: #fdf8ef;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #01204E;
+    font-size: 1.2em;
+    padding: 0%;
+    padding-top: 0.5%;
+    margin:6%;
+}
+
+.nav-link:hover{
+    border-radius: 2.5px;
+    border-color: #3AA6B9;
+    border: solid 2px;
+    border-top: none;
+    border-right: none;
+    border-left: none;   
+}
+
+.puzzle{
+    float:right;
+    align-self: center;
+    justify-self: center;
+}
+
+.puzzle:hover{
+    opacity: 80%;
+}
+
+.navbar{
+    animation: fadeIn forwards;
+    animation-duration: 6s;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2.2%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; 
+    color:#01204E;
+    
+}
+
+.navlinks{
+    padding-left: 20%;
+}
+
+.menu{
+    background-color: #fdf8ef;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+.business-brand{
+    text-align: center;
+    padding: 10%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-image: url("./images/AestheticBackground.jpg");
+    background-size: 100%;
+    margin-bottom: 5%;
+
+}
+
+.business-brand img{
+    border: solid 2px #3AA6B9;
+    border-radius: 50px;
+}
+
+.business-brand h2{
+    font-family: 'Advent Pro';
+    font-size: 4em;
+    margin-bottom: 1.5%;
+    color: #01204E;
+}
+
+.business-brand p{
+    font-family: 'Fredoka';
+    font-weight: 300;
+    font-size: 1.7em;
+    width: 55%;
+    padding-left: 23%;
+    color: #2A629A;
+}
+
+.featured-products{
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr;
+}
+
+.products{
+    padding-top: 5%;
+    padding-left: 15%;
+    width: 50%;
+}
+
+.products h2{
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    font-size: 4.2em;
+    letter-spacing: 1.7px;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    color: #01204E;
+}
+
+.products p{
+    font-family: 'Fredoka';
+    font-size: 1.3em;
+    padding-bottom: 8%;
+}
+
+.products a{
+    padding: 4.5% 6%;
+    font-family: 'Fredoka';
+    font-size: 1.2em;
+    border-radius: 50px;
+}
+
+.product-des{
+    padding: 10%;
+    padding-left: 0%;
+    margin-right: 16%;
+}
+
+.product-des h4{
+    font-size: 2em;
+    font-family: 'Advent Pro';
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 1.5%;
+    color: #01204E;
+}
+
+.product-des p{
+    font-family: 'Fredoka';
+    font-size: 1.05em;
+}
+
+.product-des img{
+    width: 110%;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin-left: 8%;
+    width: 80%;
+}
+
+.services h2{
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    font-size: 4.5em;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    letter-spacing: 1.5px;
+    color: #01204E;
+}
+
+.services p{
+    font-family: 'Fredoka';
+    font-size: 1.2em;
+    margin-top: 0%;
+}
+
+.services div{
+    margin: 2% 0%;
+    column-span: 1;
+    font-family: 'Advent Pro';
+    font-weight: 300;
+    font-size: 2em;
+    border: solid 2px #3AA6B9;
+    padding: 2.5% 0%;
+    grid-column: 1/2;
+    border-left: none;
+    border-right: none;
+    width: 65%;
+}
+
+.services div h4{
+    float: left;
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.services div i{
+    padding-left: 44%;
+    padding-top: 2.5%;
+}
+
+#two{
+    padding-left: 32%;
+}
+
+.services img{
+    width: 130%;
+    grid-row: 1/5;
+    grid-column: 2/3;
+    margin-top: 8%;
+}
+
+.services a{
+    grid-column: 1/2;
+    margin-top: 4%;
+    padding: 3.5% 2%;
+    width: 22%;
+    text-align: center;
+}
+
+.youtube{
+    text-align: center;
+    margin: 8%;
+}
+
+.youtube h2{
+    font-family: 'Advent Pro';
+    font-weight: 400;
+    font-size: 3em;
+    padding-bottom: 3%;
+}
+
+.follow-btn{
+    padding: 2% 3%;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #01204E;
+    font-family: 'Fredoka';
+    border: solid 2px #01204E;
+    border-radius: 50px;
+}
+
+.follow-btn:hover{
+    background-color: #3AA6B9;
+    color: #fdfbf7;
+}
+
+button{
+    color: #01204E;
+}
+
+button:hover{
+    background-color: #3AA6B9;
+    color: aliceblue;
+}
+.footer{
+    background-color: #fff3e0;
+    display: block;
+    text-align: center;
+    padding: 5% 2% 3%;
+    color: #01204E;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.footer div{
+    padding-bottom: 2%;
+}
+
+.footer a{
+    color: #01204E;
+    padding-left: 0%;
+}
+
+.footer p{
+    font-family: 'Fredoka';
+}
