@@ -290,3 +290,45 @@ button:hover{
 .footer p{
     font-family: 'Fredoka';
 }
+
+@media screen and (max-width: 490px) {
+    .business-brand{
+        background: none;
+    }
+    .business-brand p{
+        width: 95%;
+        padding-left: 5%;
+    }
+    .featured-products{
+        display:block;
+        grid-template-columns: 5fr;
+    }
+    .products{
+        width: 80%;
+    }
+    .product-des{
+        float: none;
+        margin-left: 15%;
+    }
+    .product-des img{
+        border-radius: 5%;
+    }
+    .services{
+        margin-left: 15%;
+        width: 90%;
+        display: block;
+        margin-bottom: 20%;
+    }
+    .services img{
+        display: none;
+    }
+    .services p{
+        padding-bottom: 6%;
+    }
+    .youtube a{
+        padding: 4% 3.5%;
+    }
+    .youtube{
+        margin-bottom: 15%;
+    }
+}
