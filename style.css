@@ -529,3 +529,42 @@ button:hover{
         width: 40%;
     }
 }
+
+
+@media screen and (max-width: 490px) {
+    #animate{
+        font-size: 270%;
+        padding-left: 8%;
+        padding-top: 30%;
+        width: 110%;
+    }
+    #name{
+        font-size: 4.5em;
+        margin-left: 15%;
+    }
+    #description{
+        font-size: 1.3em;
+        width: 95%;
+        padding-left: 15%;
+    }
+    .about_heading{
+        padding-left: 20%;
+    }
+    .about_content{
+        width: 110%;
+    }
+    .description_img{
+        width: 19em;
+        height: 17em;
+    }
+    .mailing{
+        display:block;
+    }
+    .mail-img{
+        width: 70%;
+        padding-left: 10%;
+    }
+    .mail-heading{
+        padding-left: 2%;
+    }
+}
